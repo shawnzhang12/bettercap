@@ -112,6 +112,7 @@ func (mod *GPS) Show() error {
 		mod.Session.GPS.FixQuality,
 		mod.Session.GPS.NumSatellites,
 		mod.Session.GPS.Altitude,3.14)
+	fmt.Printf("What is happening here.")
 
 	mod.Session.Refresh()
 
