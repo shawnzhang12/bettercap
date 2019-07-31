@@ -106,12 +106,12 @@ func (mod *GPS) readLine() (line string, err error) {
 }
 
 func (mod *GPS) Show() error {
-	fmt.Printf("latitude:%f longitude:%f quality:%s satellites:%d altitude:%f\n",
+	fmt.Printf("latitude:%f longitude:%f quality:%s satellites:%d altitude:%f pi:%f\n",
 		mod.Session.GPS.Latitude,
 		mod.Session.GPS.Longitude,
 		mod.Session.GPS.FixQuality,
 		mod.Session.GPS.NumSatellites,
-		mod.Session.GPS.Altitude)
+		mod.Session.GPS.Altitude,3.14)
 
 	mod.Session.Refresh()
 
